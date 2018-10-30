@@ -1,0 +1,122 @@
+#gdzie_kupic h2 {
+	
+	margin: 30px 0px 20px;
+}
+
+#gdzie_kupic #map h2 {
+      max-width: 200px;
+    margin: 10px 0px 0px;
+    font-weight: bold;
+        font-size: 14px;
+}
+#gdzie_kupic h1 {
+	font-style: normal;
+}
+
+#gdzie_kupic h1.line {
+	margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;    font-size: 20px;
+}
+
+#map {
+	width: 100%;
+    padding-bottom: 100%;
+    margin-top: 50px;
+}
+
+.nazwa {
+	color: #c9aa5e;
+	
+}
+
+.szukajka {
+	position: relative;
+}
+
+.szukajka.szukam:before {
+	content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #f5f4f4;
+    background-image: url(load.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    
+}
+.selec_woj {
+	width: 100%;
+	padding: 10px 20px;
+	border: 1px solid #ddd;
+	position: relative;
+	cursor: pointer;
+}
+
+.selec_woj:after {
+    content: '';
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    background-image: url(arrow_down.png);
+    background-size: contain;
+    transform: translateY(-50%);
+}
+
+.wojewodztwa,
+.miasta {
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #c9aa5e;
+    border: 1px solid #ddd;
+    float: left;
+    color: #fff;
+    width: 100%;
+    
+
+}
+
+.lista_sklepow {
+}
+.single_sklep {
+    cursor: pointer;
+    margin-top: 20px;
+    /* border-top: 1px solid #ddd; */
+    padding-top: 20px;
+    /* background-color: #f2f2f2; */
+    padding-bottom: 20px;
+    box-shadow: 0 0 5px #d6d6d6;
+    word-break: break-all;
+}
+.single_sklep:hover {
+    background-color: #f2f2f2;
+}
+.single_sklep.on{
+     
+     background-color: #f2f2f2;
+
+}
+
+.wojewodztwa,
+.miasta {
+	display: none;
+}
+
+.wojewodztwa li,
+.miasta li {
+	font-weight: bold;
+	padding: 10px 10px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	width: 50%;
+    float: left;
+}
+
+.wojewodztwa li:hover,
+.miasta li:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+}
